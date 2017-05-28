@@ -10,11 +10,12 @@ namespace Figury
     {
         static void Main(string[] args)
         {
-            Prostokat A = new Prostokat(5,3);
-            A.Obwód();
-            A.Pole();
-            Console.WriteLine(A.PobierzInformacje());
-           
+            Prostokat A1 = new Prostokat(5, 3);
+            A1.Pole();
+            A1.Obwód();
+            Prostokat A2 = new Prostokat(14.52, 2);
+            A2.Pole();
+            A2.Obwód();
             Console.ReadLine();
         }
     }
