@@ -17,13 +17,13 @@ namespace Logistyka
         private int cenaLitr;
         private double spalanieNaStoKm;
 
-        public Samochod(string nazwa, int cenaLitr, double spalanieNaStoKm) //Konstruktor klasy Samochod.
+        public Samochod(string nazwa, int cenaLitr, double spalanieNaStoKm) //Konstruktor klasy Samochód.
         {
             this.nazwa = nazwa;
             this.cenaLitr = cenaLitr;
             this.spalanieNaStoKm = spalanieNaStoKm;
         }
-        ~Samochod()
+        ~Samochod() //Domyślny destruktor dla klasy Samochód.
         {
             Console.WriteLine("Obiekt {0} klasy Samochód został pomyślnie usunięty.", GetHashCode());
             Console.ReadLine();
@@ -35,7 +35,7 @@ namespace Logistyka
             koszt = Convert.ToDouble(odleglosc) / 100 * spalanieNaStoKm * cenaLitr;
             return koszt;
         }
-        public string PobierzInformacje() //Własna metoda wyświetlająca informacje o obiekcie klasy Samochod.
+        public string PobierzInformacje() //Własna metoda wyświetlająca informacje o obiekcie klasy Samochód.
         {
             return string.Format("Nazwa samochodu: {0}. Koszt paliwa (cena za litr): {1}zł. Spalanie na 100km: {2}.", nazwa, cenaLitr, spalanieNaStoKm);
         }
