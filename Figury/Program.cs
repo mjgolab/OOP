@@ -10,12 +10,14 @@ namespace Figury
     {
         static void Main(string[] args)
         {
-            Prostokat A1 = new Prostokat(5, 3);
-            A1.Pole();
-            A1.Obwód();
-            Prostokat A2 = new Prostokat(14.52, 2);
-            A2.Pole();
-            A2.Obwód();
+            Prostokat prostokąt = new Prostokat(5, 3);
+            prostokąt.Pole();
+            prostokąt.Obwód();
+            Console.ReadLine();
+
+            Prostokat kwadrat = new Prostokat(4);
+            kwadrat.Pole();
+            kwadrat.Obwód();
             Console.ReadLine();
         }
     }
