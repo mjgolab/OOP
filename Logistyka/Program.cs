@@ -17,7 +17,7 @@ namespace Logistyka
 
             Samochod Lamborghini_Benzyna = new Samochod("Lamborghini", 4, 5.5);
             Console.WriteLine(Lamborghini_Benzyna.PobierzInformacje());
-            Console.WriteLine("Koszt dojazdu dla odległości 120 wynosi {0}zł.", Lamborghini_Benzyna.wyliczKosztDojazdu(120));
+            Console.WriteLine("Koszt dojazdu dla odległości 120km wynosi {0}zł.", Lamborghini_Benzyna.wyliczKosztDojazdu(120));
             Console.ReadLine();
 
             Samochod Lamborghini_Diesel = new Samochod("Lamborghini", SilnikTyp.Diesel, 4, 5.5);
