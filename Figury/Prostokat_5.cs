@@ -12,7 +12,7 @@ namespace Figury
      * Przeciąż polimorficznie w klasie Prostokąt funkcje pole i obwód.
      * Napisz aplikację, która korzysta z biblioteki Figury - tzn. tworzy obiekt klasy Prostokąt [kwadrat, długość boku to 5] i wylicza pole.*/
 {
-    class Prostokat : Figura //Dziedziczenie. Klasa Prostokąt dziedziczy elementy klasy Figura. Klasa Figura posiada dwie metody klasy abstrakcyjnej.
+    class Prostokat : Figura //Dziedziczenie. Klasa Prostokąt dziedziczy elementy klasy Figura. Klasa Figura posiada dwie metody wirtualne.
     {
         private double bok1 { get; set; }
         private double bok2 { get; set; }
