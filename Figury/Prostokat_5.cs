@@ -36,7 +36,7 @@ namespace Figury
             Console.ReadLine();
         }
 
-        override public void Pole() //Przeciążona (czyt. nadpisana) [słowo kluczowe: override] metoda wyliczająca pole prostokąta lub kwadrata dla konkretnego obiektu klasy.
+        public override void Pole() //Przeciążona (czyt. nadpisana) [słowo kluczowe: override] metoda wyliczająca pole prostokąta lub kwadrata dla konkretnego obiektu klasy.
         {
             double pole;
             if (Typ == ProstokatTyp.Kwadrat)
@@ -51,7 +51,7 @@ namespace Figury
             }
         }
 
-        override public void Obwód() //Przeciążona (czyt. nadpisana) [słowo kluczowe: override] metoda wyliczająca obwód prostokąta lub kwadrata dla konkretnego obiektu klasy.
+        public override void Obwód() //Przeciążona (czyt. nadpisana) [słowo kluczowe: override] metoda wyliczająca obwód prostokąta lub kwadrata dla konkretnego obiektu klasy.
         {
             double obwód;
             if (Typ == ProstokatTyp.Kwadrat)
